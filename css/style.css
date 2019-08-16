@@ -78,7 +78,7 @@ header {
     display: grid;
     justify-items: center;
     height: 100vh;
-    
+    margin:80px 0;
 }
 h3 {
     color: rgb(36, 36, 36);
@@ -96,12 +96,31 @@ h4 {
     line-height: 1.6;
 }
 .title-section1 {
-    color: rgb(255, 141, 88);
+    color: rgb(36, 36, 36);
     font-size: 2.5rem;
     text-align: center;
     line-height: 1;
     font-family: 'Galada', cursive;;
 }
+.uxuidesigner {
+    animation: flicker;
+    animation-direction: alternate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes flicker {
+    0% {
+      color: rgb(255, 238, 113);
+    }
+
+    50% {
+      color: rgb(255, 141, 88);
+    }
+
+    100% {
+      color: rgb(255, 105, 175);
+      }
+  }
 .profilephoto {
     width: 200px;
     height: 200px;
