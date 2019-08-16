@@ -3,10 +3,8 @@ body {
     line-height: 22px;
     font-family: 'Raleway', sans-serif;
     font-weight:900;
-    background: linear-gradient(45deg, rgb(255, 238, 113),  rgb(255, 141, 88), rgb(255, 105, 175));
-    background-size: 400% 400%;
-    margin: 0 10vw;
-    animation: gradientBG 10s ease infinite;
+
+    /* margin: 0 10vw; */
 }
 @keyframes gradientBG {
 	0% {
@@ -20,23 +18,27 @@ body {
 	}
 }
 header {
-    height: vw;
+    background: linear-gradient(45deg, rgb(255, 238, 113),  rgb(255, 141, 88), rgb(255, 105, 175));
+    background-size: 400% 400%;
+    height: 100vh;
+    animation: gradientBG 10s ease infinite;
 }
-header .container {
+ .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100%;
+    width: 100vw;
+    padding: 0 10vw;
+    box-sizing: border-box;
 }
-.hero {
-    min-height: calc(100vh - 30vw);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.hello {
+    display: grid;
+    min-height: calc(100vh - 30vh);
+    align-content: center;
 }
-.principlemenu {
-    display: flex;
-}
+
+
 .principlemenu li {
     display: inline-block;
     margin-left: 20px;
@@ -53,28 +55,34 @@ header .container {
     text-align: center;
     line-height: 1;
     font-family: 'Galada', cursive;
+    margin-bottom: 40px;
 }
 
 .hello h1 {
     font-size: 6vw;
-    margin-bottom: 40px;
 }
 .hello h2 {
     font-size: 4vw;
-    margin-bottom: 40px;
 }
 .hello {
     margin: 50px 0;
 }
 .section1 {
-    width: 100vw;
+    width: 100%;
     display: grid;
     justify-items: center;
-    margin-top: 80px;
+    height: 100vh;
+}
+.section2 {
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    height: 100vh;
+    
 }
 h3 {
-    color: #FFAB78;
-    font-size: 4vw;
+    color: rgb(36, 36, 36);
+    font-size: 1.5rem;
     margin-bottom: 20px;
     text-align: center;
 
@@ -82,29 +90,43 @@ h3 {
 
 h4 {
     color: rgb(36, 36, 36);
-    font-size: 1.5vw;
-    margin-bottom: 40px;
+    font-size: 1rem;
+    margin: 20px 0;
     text-align: center;
+    line-height: 1.6;
+}
+.title-section1 {
+    color: rgb(255, 141, 88);
+    font-size: 2.5rem;
+    text-align: center;
+    line-height: 1;
+    font-family: 'Galada', cursive;;
+}
+.profilephoto {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 50%;
+    padding: 0;
+    font-size: 0;
+    object-fit: cover;
 }
 .summary {
     width: 800px;
     display: grid;
-    justify-content: space-around;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 30px;
 }
 .sum 
 {   display: inline-block;
     text-align: center;
-    vertical-align: top;
-    margin: 0 auto 40px;
-    width: 33.33%;
-    padding: 0 40px;
     color:rgb(36, 36, 36);
 }
 .divider {
-    display: grid;
-    grid-template-rows: 8px;
-    grid-template-columns: 48px;
-    background-color: black;
+    width: 50%;
+    height: 4px;
+    background-color:rgb(255, 141, 88);
+    margin: 0 auto;
 }
 .rrss-icons ul {
    display: grid;
@@ -118,6 +140,7 @@ h4 {
 
 .rrss-icons li img{
     width: 100%;
+    color: rgb(255, 141, 88);
 }
   
 .rrss-icons {
@@ -127,8 +150,4 @@ h4 {
 footer {
     height: 15vw;
 
-}
-.title {
-    color: white;
-    font-size: 1.5vw;
 }
