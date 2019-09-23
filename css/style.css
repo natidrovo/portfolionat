@@ -20,6 +20,7 @@ body {
 }
 header {
     background: white;
+    height: 100%;
 }
 .home{
     width: 100%;
