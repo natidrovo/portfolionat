@@ -20,7 +20,6 @@ body {
 }
 header {
     background: white;
-    height: 100%;
 }
 .home{
     width: 100%;
@@ -591,5 +590,5 @@ background-size: cover;
     .claim {
         padding: 25px 0;
     }
-    
+
 }
