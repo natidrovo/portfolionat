@@ -169,7 +169,7 @@ h4 {
     background: linear-gradient(45deg, rgb(255, 238, 113),  rgb(255, 141, 88), rgb(255, 105, 175));
     background-size: 400% 400%;
     animation: gradientBG 3s ease infinite;
-    height: 90%;
+    height: 75%;
     display: grid;
     align-items: center;
 }
@@ -590,4 +590,5 @@ background-size: cover;
     .claim {
         padding: 25px 0;
     }
+    
 }
