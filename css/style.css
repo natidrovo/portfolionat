@@ -70,41 +70,7 @@ header {
     font-weight: 400px;
 }
 
-.scroll {
-    text-indent: -2000em;
-    border-radius: 100px;
-    display: block;
-    position: absolute;
-    z-index: 100;
-    bottom: 10px;
-    left: 50%;
-    width: 50px;
-    margin-left: -25px;
-    text-align: center;
-    text-decoration: none;
-}
 
-.scroll span {
-    display: block;
-    width: 30px;
-    height: 30px;
-    margin: 0 auto;
-    background: url(/img/Path.svg);
-    background-size: 30px 30px;
-    animation: bounce 2s 1s infinite;
-    transition: all 0.2s ease-in-out;
-}
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-        transform: translateY(0);
-    }
-    40% {
-        transform: translateY(-10px);
-    }
-    60% {
-        transform: translateY(-5px);
-    }
-}
 #aboutme
 {
     width: 100%;
@@ -135,8 +101,7 @@ h4 {
 
 .title1 {
     font-size: 28px;
-    margin: 0 auto;
-    padding: 50px 0;
+    margin: 50px auto;
     display: block;
     color: #575757;
 }
@@ -187,6 +152,9 @@ h4 {
     text-decoration: none;
     color: rgb(255, 141, 88);
 }
+.mailme:hover {
+    text-decoration: underline;
+}
 
 .profilephoto {
     width: 200x;
@@ -200,8 +168,8 @@ h4 {
     width: 100%;
     background: linear-gradient(45deg, rgb(255, 238, 113),  rgb(255, 141, 88), rgb(255, 105, 175));
     background-size: 400% 400%;
-    animation: gradientBG 10s ease infinite;
-    height: 75%;
+    animation: gradientBG 3s ease infinite;
+    height: 90%;
     display: grid;
     align-items: center;
 }
@@ -278,7 +246,6 @@ h6 {
     width: 850px;
     justify-content: center;
     grid-gap: 50px;
-    margin: 50px 0;
 }
 
 
@@ -612,7 +579,7 @@ background-size: cover;
         margin:0;
     }
     .title1{
-        padding: 25px 0;
+        margin: 25px 0;
     }
     .claim2 {
         padding: 0 0 25px 0;
