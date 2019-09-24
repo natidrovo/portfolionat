@@ -4,8 +4,8 @@ body {
     font-family: 'Nunito', sans-serif;
     font-weight:900;
     background: rgb(255, 255, 255);
-
-    /* margin: 0 10vw; */
+	overflow-x: hidden;
+    overscroll-behavior-x: none;
 }
 @keyframes gradientBG {
 	0% {
