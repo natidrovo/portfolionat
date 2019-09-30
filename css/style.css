@@ -4,7 +4,7 @@ body {
     font-family: 'Nunito', sans-serif;
     font-weight:900;
     background: rgb(255, 255, 255);
-	overflow-x: hidden;
+    overflow-x: hidden;
     overscroll-behavior-x: none;
 }
 @keyframes gradientBG {
@@ -94,7 +94,7 @@ h4 {
     color: rgb(92, 92, 92);
     font-size: 16px;
     margin: 20px 0;
-    text-align: left;
+    text-align: center;
     line-height: 25px;
     font-weight: 400;
 }
@@ -333,54 +333,12 @@ background-size: cover;
     margin-bottom: 100px;
     margin-top: 100px:
 }
-.menu_container {
-    display: table;
-    position: fixed;
-    z-index: 100;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    right: 0;
-    left: 0;
-    overflow: hidden;
-    background: rgba(255, 255, 255, 0.94);
-    transition: opacity 0.35s ease-in-out;
-    opacity: 0;
-    pointer-events: none;
-}
+
 .bold {
     font-weight: 600;
     color: rgb(255, 141, 88)
 }
-.menu_container_visible {
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
-}
-.menu {
-    display: table;
-    text-align: center;
-    margin: 0 auto;
-    padding: 0;
 
-}
-.menu li a {
-    text-decoration: none;
-    display: block;
-    margin: 80px 0 80px 0;
-    letter-spacing: 0.3em;
-    color: rgb(255, 141, 88);
-    letter-spacing: 3px;
-    text-align: center;
-    background-position: center center;
-    background-size: 201px 60px;
-    opacity: 0.95;
-    font-weight: bolder;
-    transition: all 0.2s ease-out;
-}
-.menu li a:hover {
-    transform: scale(1.2);
-}
 .icon-footer {
     width: 60px;
     height: 60px;
@@ -397,67 +355,7 @@ background-size: cover;
     grid-gap: 50px; 
  }
 
-/*---------------------
-.rrss-icons ul {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-gap: 2vw; 
- }
 
- .rrss-icons li img{
-     width: 100%;
-     color:  rgb(255, 141, 88);
- }
-   
-
- }
- footer {
-     height: 15vw;
- }
-
-*/
-
-.menu_button {
-    display: block;
-    position: fixed;
-    z-index: 900;
-    top: 20px;
-    right: 20px;
-    width: 48px;
-    height: 48px;
-    background-color: rgb(255, 141, 88);
-    border-radius: 100px;
-    cursor: pointer;
-    margin: 0 8vw 0 0;
-    opacity: 0;
-
-    &.on {
-        .one {
-          @include transform(rotate(45deg) translate(7px, 7px));
-        }
-    
-        .two {
-          opacity: 0;
-        }
-    
-        .three {
-          @include transform (rotate(-45deg) translate(8px, -10px));
-        }
-      }
-
-}
-
-.one,
-.two,
-.three{
-  width: 70%;
-  height: 5px;
-  background: white;
-  border-radius: 10px;
-  margin: 4px auto;
-  backface-visibility: hidden;
-  @include transition-duration(0.3s);
-}
 .email {
     font-weight: 400;
     color: rgb(255, 171, 120);
