@@ -41,6 +41,9 @@ header {
     margin-left: 20px;
 
 }
+.principlemenu ul {
+    text-align: center;
+}
 .principlemenu a {
     text-decoration: none;
     color: #575757;
