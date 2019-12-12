@@ -38,7 +38,7 @@ header {
 
 .principlemenu li {
     display: inline-block;
-    margin-left: 20px;
+    margin:  0 10px;
 
 }
 .principlemenu a {
@@ -94,7 +94,7 @@ header {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 
 
@@ -129,15 +129,16 @@ h4 {
     text-align: center;
     font-weight: 300;
     line-height: 1;
-    padding: 50px 0;
+    padding-bottom: 50px;
 }
+
 .claim2 {
     color: rgb(15, 15, 15);
     font-size: 20px;
     text-align: center;
     font-weight: 300;
     line-height: 1;
-    padding-bottom: 50px;
+    padding: 0 0 50px 0;
 }
 .claim3 {
     color: rgb(15, 15, 15);
@@ -147,14 +148,8 @@ h4 {
     line-height: 1;
     padding: 50px 0;
 }
-.claim4 {
-    color: rgb(15, 15, 15);
-    font-size: 20px;
-    text-align: center;
-    font-weight: 300;
-    line-height: 1;
-    padding: 50px 0;
-}
+
+
 .email {
     padding-bottom: 30px;
 }
@@ -273,11 +268,11 @@ background-color: transparent;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 h5 {
     color: rgb(255, 255, 255);
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     text-decoration: none;
     text-align: center;
 
@@ -286,7 +281,7 @@ h5 {
 
 h6 {
     color: rgb(255, 255, 255);
-    font-size: 0.75rem;
+    font-size: 1rem;
     font-weight: 300;
     margin: 20px 10px;
     text-align: center;
@@ -384,15 +379,19 @@ background-size: cover;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    margin-bottom: 100px;
-    margin-top: 100px:
+    margin-top: 80px:
 }
 
 .bold {
     font-weight: 300;
     color:rgb(127,84,229);
 }
-
+.boldfooter {
+    font-size: 20px;
+    font-weight: 300;
+    color:rgb(119, 119, 119);
+    padding: 50px 0 20px 0;
+}
 .icon-footer {
     width: 60px;
     height: 60px;
@@ -441,7 +440,10 @@ background-size: cover;
     grid-template-rows: repeat(2, auto);
 }
 #aboutme .bio {
-    width:70%;
+    width:100%;
+}
+.boldfooter {
+    font-size: 18px;
 }
 }
 
@@ -474,9 +476,28 @@ background-size: cover;
         grid-template-rows: repeat(3, auto);
     }
     #aboutme .bio {
-        width: 75%;
+        width: 100%;
     }
-    
+    .mainphoto {
+        height: 170px;
+    }
+    .principlemenu a {
+        font-size: 14px;
+    }
+    .claim {
+        font-size: 18px;
+    }
+    .claim2 {
+        font-size: 18px;
+    }
+
+    .claim3 {
+        font-size: 18px;
+    }
+    .boldfooter {
+        font-size: 16px;
+    }
+
 }
 
     @media screen and (max-width: 650px) {
@@ -502,12 +523,30 @@ background-size: cover;
         grid-template-rows: repeat(3, auto);
     }
     #aboutme .bio {
-        width: 80%;
+        width: 100%;
     }
     .title1{
         font-size: 24px;
     }
-    
+    .mainphoto {
+        height: 150px;
+    }
+    .principlemenu a {
+        font-size: 14px;
+    }
+    .claim {
+        font-size: 18px;
+    }
+    .claim2 {
+        font-size: 18px;
+    }
+    .claim3 {
+        font-size: 18px;
+    }
+    .boldfooter {
+        font-size: 14px;
+    }
+
 }
 @media screen and (max-width: 500px) {
    
@@ -532,8 +571,11 @@ background-size: cover;
         grid-template-rows: repeat(5, auto);
         
     }
+    .mainphoto {
+        height: 120px;
+    }
     #aboutme .bio {
-        width: 85%;
+        width: 100%;
     }
     #myportfolio .projects  {
         margin:0;
@@ -542,14 +584,23 @@ background-size: cover;
         margin: 25px 0;
         font-size: 22px;
     }
+
+    .claim {
+        font-size: 16px;
+    }
     .claim2 {
-        padding: 0 0 25px 0;
+        font-size: 16px;
     }
     .claim3 {
-        padding: 25px 0;
+        font-size: 16px;
     }
-    .claim {
-        padding: 25px 0;
+    .principlemenu a {
+        font-size: 12px;
     }
-    
+    h4 {
+       font-size: 15px;
+    }
+    .boldfooter {
+        font-size: 12px;
+    }
 }
