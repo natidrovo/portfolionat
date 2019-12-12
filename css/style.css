@@ -1,8 +1,8 @@
 body {
     font-size: 16px;
     line-height: 22px;
-    font-family: 'Nunito', sans-serif;
-    font-weight:900;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight:300;
     background: rgb(255, 255, 255);
     overflow-x: hidden;
     overscroll-behavior-x: none;
@@ -24,7 +24,7 @@ header {
 .home{
     width: 100%;
     height: 100vh;
-    text-align: end;
+    text-align: center;
 }
  .container {
     align-items: center;
@@ -41,38 +41,50 @@ header {
     margin-left: 20px;
 
 }
-.principlemenu ul {
-    text-align: center;
-}
 .principlemenu a {
     text-decoration: none;
-    color: #575757;
+    color: rgb(15, 15, 15);
     font-size: 16px;
+    font-weight:300;
  
 }
 
 .principlemenu a:hover {
-    color:rgb(255, 141, 88);
+    color:rgb(128, 78, 230);
 
 }
-.hello1, .hello2 {
-    color: white;
+.hello1 .hello2 .hello3 .hello4 {
+
     text-align: center;
     line-height: 1;
-    font-family: 'Galada', sans-serif;
-    font-size: bold;
+    font-family: 'Josefin Sans', sans-serif;
     margin: 40px auto;
 }
 
 .hello1 {
-    font-size: 6vw;
-    font-weight: 600px;
+    font-size: 5vw;
+    font-weight: 600;
+    padding-top: 6vw;
+    color: rgb(255, 255, 255);
 }
 .hello2 {
-    font-size: 5vw;
-    font-weight: 400px;
+    font-size: 4vw;
+    font-weight: 300;
+    padding-bottom: 6vw;
+    color: rgb(255, 255, 255);
 }
-
+.hello3 {
+    font-size: 3vw;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    line-height: 5vw;
+    margin: 20px 0;
+}
+.hello4 {
+    font-size: 2vw;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+}
 
 #aboutme
 {
@@ -84,82 +96,100 @@ header {
     align-items: center;
     margin-bottom: 100px;
 }
+
+
 h3 {
-    color: rgb(92, 92, 92);
+    color: rgb(15, 15, 15);
     font-size: 18px;
-    margin: 30px 0;
-    text-align: center;
-    font-weight: 400;
-
-}
-
-h4 {
-    color: rgb(92, 92, 92);
-    font-size: 16px;
     margin: 20px 0;
     text-align: center;
     line-height: 25px;
-    font-weight: 400;
+    font-weight: 600;
+}
+
+h4 {
+    color: rgb(128, 78, 230);
+    font-size: 16px;
+    margin-top: 15px;
+    text-align: center;
+    font-weight: 300;
+
 }
 
 .title1 {
     font-size: 28px;
     margin: 50px auto;
     display: block;
-    color: #575757;
+    color: rgb(15, 15, 15);
+    font-weight: 600;
 }
 .claim {
-    color: rgb(92, 92, 92);
+    color: rgb(15, 15, 15);
     font-size: 20px;
     text-align: center;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1;
-    width: 85%;
     padding: 50px 0;
 }
 .claim2 {
-    color: rgb(92, 92, 92);
+    color: rgb(15, 15, 15);
     font-size: 20px;
     text-align: center;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1;
     padding-bottom: 50px;
 }
 .claim3 {
-    color: rgb(92, 92, 92);
+    color: rgb(15, 15, 15);
     font-size: 20px;
     text-align: center;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1;
     padding: 50px 0;
 }
 .claim4 {
-    color: rgb(92, 92, 92);
+    color: rgb(15, 15, 15);
     font-size: 20px;
     text-align: center;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1;
-    padding-top: 50px;
+    padding: 50px 0;
 }
 .email {
     padding-bottom: 30px;
 }
-.bio {
+.boxclaim {
+    width: 100%;
+    background: linear-gradient(45deg, rgb(127,84,229), rgb(134,230,255));
+    background-size: 400% 400%;
+    animation: gradientBG 3s ease infinite;
+    height: 25vw;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    margin: 0 0 60px 0;
+  }
+}
+.bio  {
+    line-height: 30px;
+    font-weight: 300;
+    color: rgb(15, 15, 15);
+    font-weight: 32px;
+}
+.bio p {
     width: 65%;
-    line-height: 25px;
-    font-weight: 400;
-    color: rgb(92, 92, 92);
-    font-weight: 18px;
+    margin: 0 auto;
+
 }
 .mailme {
     text-decoration: none;
-    color: rgb(255, 141, 88);
+    color: rgb(127,84,229);
 }
 .mailme:hover {
     text-decoration: underline;
 }
 
-.profilephoto {
+.mainphoto {
     width: 200x;
     height: 200px;
     padding: 0;
@@ -167,9 +197,17 @@ h4 {
     object-fit: cover;
 
 }
+.profilephoto {
+    width: 100x;
+    height: 100px;
+    padding: 0;
+    font-size: 0;
+    object-fit: cover;
+
+}
 .boxhome {
     width: 100%;
-    background: linear-gradient(45deg, rgb(255, 238, 113),  rgb(255, 141, 88), rgb(255, 105, 175));
+    background: linear-gradient(45deg, rgb(127,84,229), rgb(134,230,255));
     background-size: 400% 400%;
     animation: gradientBG 3s ease infinite;
     height: 75%;
@@ -196,24 +234,37 @@ h4 {
 .sum 
 {   display: inline-block;
     text-align: center;
-    color:rgb(36, 36, 36);
+    color:rgb(15,15, 15);
+}
+.sum p {
+    text-align: left;
+    padding: 30px;
 }
 .divider {
     height: 4px;
-    background-color:rgb(255, 171, 120);
+    background: linear-gradient(to right bottom, #804ae5,  #86e6ff);
     margin: 10px auto;
 }
 .button {
-    font-weight: 600;
-    color: rgb(255, 141, 88);
+    font-weight: 300;
+    color: rgb(128, 78, 230);
     text-decoration: none;
-    
+    justify-content: center;
 }
+
 .buttonprofile {
-    background-color: transparent;
-   border: 3px solid rgba(255, 171, 120);
-   width: 200px;
+background-color: transparent;
+   border: 1px solid  #804ae5;
+   padding: 1px 5px;
    margin: 0 auto;
+   border-radius: 42289429PX;
+   width: 120px;
+}
+
+
+
+.buttonprofile a:hover {
+    text-decoration: none;
 }
 #myportfolio {
     width: 100%;
@@ -311,7 +362,7 @@ background-size: cover;
 
 .infocard {
     opacity: 0;
-    background-color: rgb(255, 171, 120);
+    background: linear-gradient(to right bottom, #804ae5,  #86e6ff);
     width: 200px;
     height: 200px;
     z-index: 3;
@@ -338,8 +389,8 @@ background-size: cover;
 }
 
 .bold {
-    font-weight: 600;
-    color: rgb(255, 141, 88)
+    font-weight: 300;
+    color:rgb(127,84,229);
 }
 
 .icon-footer {
@@ -361,7 +412,7 @@ background-size: cover;
 
 .email {
     font-weight: 400;
-    color: rgb(255, 171, 120);
+    color: rgb(127,84,229);
     text-align: center;
     font-size: 20px;
 }
@@ -390,23 +441,23 @@ background-size: cover;
     grid-template-rows: repeat(2, auto);
 }
 #aboutme .bio {
-    width: 70%;
+    width:70%;
 }
-	body {
-		    overflow-x: hidden;
-    overscroll-behavior-x: none;
-	}
 }
 
     @media screen and (max-width: 767.98px)
 
     {
+    
     #aboutme .summary{
         max-width: 600px;
-        grid-gap: 40px 40px;
+        grid-gap: 30px 40px;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(1, auto);
         width: 75%;
+    }
+    .title1{
+        font-size: 26px;
     }
 
     #aboutme .summary2{
@@ -418,68 +469,65 @@ background-size: cover;
     }
     #myportfolio .cards{
         max-width: 600px;
-        grid-gap: 56px 0px;
+        grid-gap: 30px 0px;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, auto);
     }
     #aboutme .bio {
         width: 75%;
     }
-    body {
-		    overflow-x: hidden;
-    overscroll-behavior-x: none;
-	}
+    
 }
 
     @media screen and (max-width: 650px) {
     
     #aboutme .summary{
         max-width: 400px;
-        grid-gap: 56px 0px;
+        grid-gap: 25px 0px;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(3, auto);
         width: 80%;
     }
     #aboutme .summary2{
         max-width: 400px;
-        grid-gap: 56px 0px;
+        grid-gap: 35px 0px;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(2, auto);
         width: 80%;
     }
     #myportfolio .cards{
         max-width: 400px;
-        grid-gap: 56px 0px;
+        grid-gap: 25px 0px;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, auto);
     }
     #aboutme .bio {
         width: 80%;
     }
-    body {
-		    overflow-x: hidden;
-    overscroll-behavior-x: none;
-	}
+    .title1{
+        font-size: 24px;
+    }
+    
 }
 @media screen and (max-width: 500px) {
    
     #aboutme .summary{
         max-width: 360px;
-        grid-gap: 56px 0px;
+        grid-gap: 20px 0px;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(3, auto);
         width: 85%;
     }
     #aboutme .summary2{
         max-width: 360px;
-        grid-gap: 56px 0px;
+        grid-gap: 30px 0px;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(2, auto);
         width: 85%;
     }
     #myportfolio .cards{
         max-width: 360px;
-        grid-gap: 40px 40px;
+        grid-gap: 20px 0px;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(5, auto);
         
@@ -492,6 +540,7 @@ background-size: cover;
     }
     .title1{
         margin: 25px 0;
+        font-size: 22px;
     }
     .claim2 {
         padding: 0 0 25px 0;
@@ -502,9 +551,5 @@ background-size: cover;
     .claim {
         padding: 25px 0;
     }
-	body {
-		    overflow-x: hidden;
-    overscroll-behavior-x: none;
-	}
-
+    
 }
