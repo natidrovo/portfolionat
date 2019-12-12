@@ -68,20 +68,20 @@ header {
     color: rgb(255, 255, 255);
 }
 .hello2 {
-    font-size: 4vw;
+    font-size: 4.5vw;
     font-weight: 300;
     padding-bottom: 6vw;
     color: rgb(255, 255, 255);
 }
 .hello3 {
-    font-size: 3vw;
+    font-size: 3.5vw;
     font-weight: 600;
     color: rgb(255, 255, 255);
     line-height: 5vw;
     margin: 20px 0;
 }
 .hello4 {
-    font-size: 2vw;
+    font-size: 3vw;
     font-weight: 300;
     color: rgb(255, 255, 255);
 }
