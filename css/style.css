@@ -327,6 +327,12 @@ background-position: bottom;
 background-repeat: no-repeat;
 background-size: cover;
 }
+#photo6{
+background-image: url(../img/AllbirdsPortfolio.png);
+background-position: bottom;
+background-repeat: no-repeat;
+background-size: cover;
+}
 .photo {
     height: 100%;
     width: 100%;
