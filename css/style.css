@@ -483,6 +483,17 @@ align-items: center;
 	    .hello1 {
 	   font-size: 30px;
 	}
+	    .principlemenu li {
+        margin:  0 8px;
+    }
+	.hello1 {
+	   font-size: 28px;
+	}
+	.container ¨
+	{
+	15px 20px;
+	}
+    
             
 
 }
@@ -521,8 +532,15 @@ align-items: center;
     .principlemenu a {
         font-size: 14px;
     }
+    .principlemenu li {
+        margin:  0 5px;
+    }
 	.hello1 {
 	   font-size: 28px;
+	}
+	.container ¨
+	{
+	15px 20px;
 	}
     
 }
