@@ -67,9 +67,10 @@ header {
     margin: 40px auto;
 }
 
-.hello1 {
+
+.hello1 p{
     text-align: left;
-    font-size: 36px;
+    font-size: 30px;
     font-weight: 600;
     line-height:3rem;
     color: rgb(0, 0, 0);
@@ -439,11 +440,15 @@ align-items: center;
             .principlemenu a {
                 font-size: 20px;
             }
-	    .hello1 p {
-	   font-size: 28px;
-		    line-height: 2.5rem;
-	}
-
+            .hello1 p{
+                font-size: 28px;
+               line-height: 2.6rem;
+             }
+             .container 
+             {
+             padding:  25px 30px;
+             }
+             
 }
 
     @media screen and (max-width: 650px) {
@@ -480,19 +485,15 @@ align-items: center;
             .principlemenu a {
                 font-size: 18px;
             }
-	    
-	    .principlemenu li {
-        margin:  0 8px;
-    }
-	.hello1 p {
-	   font-size: 26px;
-	  line-height: 2rem;
-	}
-	.container 
-	{
-	15px 20px;
-	}
-    
+            .hello1 p{
+                font-size: 26px;
+               line-height: 2.3rem;
+             }
+             .container 
+             {
+             padding:  20px 25px;
+             }
+             
             
 
 }
@@ -500,47 +501,48 @@ align-items: center;
    
   
     #contact .footer {
-    display: grid;
-    grid-template-columns: repeat(1, 2fr);
-    margin: 0 auto;
-    width: 75%;
-    }
-    .mainphoto {
-        height: 120px;
-    }
-    .summary {
-        width: 100%;
-        margin: 20px auto;
-    }
-    .sum 
-    {  
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        justify-content: center;
-        width: 100%;
-        background-color:rgb(208, 255, 242);
-    }
-    .sum1 
-    {  
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        justify-content: center;
-        width: 100%;
-        background-color: rgb(204, 227, 253);
-    }
-    .principlemenu a {
-        font-size: 14px;
-    }
-    .principlemenu li {
-        margin:  0 5px;
-    }
-	.hello1 p {
-	   font-size: 24px;
-	  line-height: 2rem;
-	}
-	.container 
-	{
-	15px 20px;
-	}
+        grid-template-columns: repeat(1, 2fr);
+        margin: 0 auto;
+        width: 75%;
+        }
+        .mainphoto {
+            height: 120px;
+        }
+        .summary {
+            width: 100%;
+            margin: 20px auto;
+        }
+        .sum 
+        {  
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            justify-content: center;
+            width: 100%;
+            background-color:rgb(208, 255, 242);
+        }
+        .sum1 
+        {  
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            justify-content: center;
+            width: 100%;
+            background-color: rgb(204, 227, 253);
+        }
+        .principlemenu a {
+            font-size: 14px;
+        }
+        .principlemenu li {
+            margin:  0 5px;
+        }
+        .hello1 p{
+           font-size: 24px;
+          line-height: 2rem;
+        }
+        .container 
+        {
+        padding:  15px 20px;
+        }
+        
     
 }
