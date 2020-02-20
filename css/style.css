@@ -1,8 +1,8 @@
 body {
     font-size: 16px;
     line-height: 22px;
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight:300;
+    font-family: 'Poppins', sans-serif;
+    font-weight:200;
     background: rgb(255, 255, 255);
     overflow-x: hidden;
     overscroll-behavior-x: none;
@@ -21,20 +21,24 @@ body {
 header {
     background: white;
 }
-.home{
+#home{
     width: 100%;
     height: 100vh;
     text-align: center;
 }
  .container {
-    align-items: center;
     width: 100vw;
     height: fit-content;
     padding: 30px 40px;
     box-sizing:border-box;
+    position: fixed;
+  background-color: white;
+
 }
 
-
+.principlemenu {
+    text-align: center;
+}
 
 .principlemenu li {
     display: inline-block;
@@ -43,29 +47,39 @@ header {
 }
 .principlemenu a {
     text-decoration: none;
-    color: rgb(15, 15, 15);
-    font-size: 16px;
-    font-weight:300;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight:600;
  
 }
 
 .principlemenu a:hover {
-    color:rgb(128, 78, 230);
+    color:rgb(86, 218, 181);
 
 }
-.hello1 .hello2 .hello3 .hello4 {
+.bold {
+    color:rgb(86, 218, 181);
+}
+ .hello2 .hello3 .hello4 {
 
     text-align: center;
     line-height: 1;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 40px auto;
 }
 
 .hello1 {
-    font-size: 5vw;
+    text-align: left;
+    font-size: 36px;
     font-weight: 600;
-    padding-top: 6vw;
-    color: rgb(255, 255, 255);
+    line-height:3rem;
+    color: rgb(0, 0, 0);
+    letter-spacing: 0.1rem;
+}
+.boxcentered{
+    width: 75%;
+    place-self: center;
+
 }
 .hello2 {
     font-size: 4.5vw;
@@ -99,66 +113,65 @@ header {
 
 
 h3 {
-    color: rgb(15, 15, 15);
-    font-size: 18px;
-    margin: 20px 0;
-    text-align: center;
-    line-height: 25px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    text-align: left;
+    line-height: 1.5rem;
     font-weight: 600;
+    margin: 25px auto;
 }
 
 h4 {
-    color: rgb(128, 78, 230);
+    color: rgb(0, 174, 180);
     font-size: 16px;
-    margin-top: 15px;
-    text-align: center;
+    text-align: left;
     font-weight: 300;
+    line-height: 1.5rem;
 
+}
+
+h5 {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    text-align: left;
+    line-height: 1.5rem;
+    font-weight: 600;
 }
 
 .title1 {
-    font-size: 28px;
+    font-size: 24px;
     margin: 50px auto;
     display: block;
-    color: rgb(15, 15, 15);
+    color: rgb(86, 218, 181);
     font-weight: 600;
+    width: 75%;
+}
+.title1 p{
+    text-align: left;
 }
 .claim {
-    color: rgb(15, 15, 15);
-    font-size: 20px;
-    text-align: center;
-    font-weight: 300;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    font-weight: 600;
     line-height: 1;
-    padding-bottom: 50px;
+    width: 75%;
+    margin: 25px auto;
 }
 
-.claim2 {
-    color: rgb(15, 15, 15);
-    font-size: 20px;
-    text-align: center;
-    font-weight: 300;
-    line-height: 1;
-    padding: 0 0 50px 0;
+.boxhome {
+    width: 100%;
+    background: rgb(208, 255, 242);
+    height: 100%;
+    display: grid;
+    align-items: center;
+    margin: 0 auto;
 }
-.claim3 {
-    color: rgb(15, 15, 15);
-    font-size: 20px;
-    text-align: center;
-    font-weight: 300;
-    line-height: 1;
-    padding: 50px 0;
-}
-
-
 .email {
     padding-bottom: 30px;
 }
 .boxclaim {
     width: 100%;
-    background: linear-gradient(45deg, rgb(127,84,229), rgb(134,230,255));
-    background-size: 400% 400%;
-    animation: gradientBG 3s ease infinite;
-    height: 25vw;
+    height: 20vw;
     display: grid;
     align-items: center;
     justify-items: center;
@@ -166,22 +179,19 @@ h4 {
   }
 }
 .bio  {
-    line-height: 30px;
-    font-weight: 300;
-    color: rgb(15, 15, 15);
-    font-weight: 32px;
+    margin: 20px auto;
 }
 .bio p {
-    width: 65%;
+    width: 75%;
     margin: 0 auto;
-
+    font-weight: 200;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    line-height:1.7rem;
 }
-.mailme {
-    text-decoration: none;
-    color: rgb(127,84,229);
-}
-.mailme:hover {
-    text-decoration: underline;
+.skills{
+    width: 75%;
+    margin: 0 auto;
 }
 
 .mainphoto {
@@ -190,78 +200,91 @@ h4 {
     padding: 0;
     font-size: 0;
     object-fit: cover;
+    margin: 20px auto;
 
 }
-.profilephoto {
-    width: 100x;
-    height: 100px;
-    padding: 0;
-    font-size: 0;
-    object-fit: cover;
 
-}
-.boxhome {
-    width: 100%;
-    background: linear-gradient(45deg, rgb(127,84,229), rgb(134,230,255));
-    background-size: 400% 400%;
-    animation: gradientBG 3s ease infinite;
-    height: 75%;
-    display: grid;
-    align-items: center;
-}
+
 .summary {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, auto);
-    grid-gap: 40px 40px;
-    margin: 0 auto;
-    width: 65%;
-    
-}
-.summary2 {
-    width: 65%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    grid-template-rows: repeat(1, auto);
-    grid-gap: 40px 40px;
-    margin: 0 auto;
+    width: 75%;
+    margin: 20px auto;
 }
 .sum 
-{   display: inline-block;
-    text-align: center;
-    color:rgb(15,15, 15);
+{  
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    width: 100%;
+    background-color:rgb(208, 255, 242);
 }
-.sum p {
-    text-align: left;
-    padding: 30px;
+.cardinformation {
+    width: 75%;
+    margin: 3.5rem auto;
+    display: grid;
+
 }
+
+
 .divider {
-    height: 4px;
-    background: linear-gradient(to right bottom, #804ae5,  #86e6ff);
-    margin: 10px auto;
+    height: 2px;
+    background: rgb(86, 218, 181);
+    margin: 0 auto;
 }
 .button {
-    font-weight: 300;
-    color: rgb(128, 78, 230);
-    text-decoration: none;
-    justify-content: center;
+   margin: 24px auto;
+   text-align-last: left;
 }
 
 .buttonprofile {
-background-color: transparent;
-   border: 1px solid  #804ae5;
-   padding: 1px 5px;
-   margin: 0 auto;
-   border-radius: 42289429PX;
-   width: 120px;
+background-color: white;
+   border: 2px solid  rgb(86, 218, 181);
+   padding: 14px 20px;
+   border-radius: 10px;
+   text-decoration: none;
+   width: 150px;
+   color: rgb(86, 218, 181);
+   margin: auto;
 }
 
+.buttonprofile a {
+align-items: center;
 
+}
 
-.buttonprofile a:hover {
+  
+.biobutton{
+    text-align-last: left;
+    margin: 32px auto;
+    width: 75%;
+}
+
+.buttonprofile:hover{
+    background-color: rgb(86, 218, 181);
+       border: 2px solid rgb(86, 218, 181);
+       padding: 14px 20px;
+       border-radius: 10px;
+       text-decoration: none;
+       width: 150px;
+       color: rgb(255, 255, 255);
+       -webkit-transition-duration: 0.4s;
+       transition-duration: 0.4s;
+       cursor: pointer;
+     
+}
+.linkcs {
     text-decoration: none;
+    color: rgb(0, 174, 180);
+  
+ }
+ .linkcs:hover {
+    text-decoration: none;
+    color: rgb(0, 174, 180);
+    font-weight: 600;
+ }
+
 }
-#myportfolio {
+#myportfolio 
+{
     width: 100%;
     height: 100%;
     display: flex;
@@ -270,343 +293,227 @@ background-color: transparent;
     align-items: center;
     margin-bottom: 80px;
 }
-h5 {
-    color: rgb(255, 255, 255);
-    font-size: 1.5rem;
-    text-decoration: none;
-    text-align: center;
 
 
-}
-
-h6 {
-    color: rgb(255, 255, 255);
-    font-size: 1rem;
-    font-weight: 300;
-    margin: 20px 10px;
-    text-align: center;
-    line-height: 1.6;
-    text-decoration: none;
-}
-
-.projects{
-    display: flex;
-    justify-content: center;
-    width: 850px;
-    justify-content: center;
-    grid-gap: 50px;
-}
-
-
-
-#photo1{
- background-image: url(../img/Habitatweb.png);
+.profilephoto{
  background-position: bottom;
  background-repeat: no-repeat;
- background-size: cover;}
- #photo2{
-    background-image: url(../img/Habitsweb.png);
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: cover;}
- #photo3{
-background-image: url(../img/Flyflow.png);
-background-position: bottom;
-background-repeat: no-repeat;
-background-size: cover;
-}
-#photo4{
-background-image: url(../img/wavygrad.png);
-background-position: bottom;
-background-repeat: no-repeat;
-background-size: cover;
-} 
-#photo5{
-background-image: url(../img/Spotifyweb.png);
-background-position: bottom;
-background-repeat: no-repeat;
-background-size: cover;
-}
-#photo6{
-background-image: url(../img/AllbirdsPortfolio.png);
-background-position: bottom;
-background-repeat: no-repeat;
-background-size: cover;
-}
-.photo {
-    height: 100%;
-    width: 100%;
-    align-content: center;
+ background-size: cover;
+ width: 100%;
+ height: 100%;
 }
 
-.cards {
+
+.sum1{
+    background-color: rgb(204, 227, 253);
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2,auto);
+    grid-template-columns: repeat(2, 1fr);
     justify-content: center;
-    grid-gap: 20px 50px;
-    max-width: 960px;
-    }
-    
-.photocard {
     width: 100%;
-    height: 100%;
-    text-decoration: none;
-    margin: 0px auto;
-}
-.infocard:hover {
- opacity: 0.99;
- transition: all .25s linear;
- transform: scale(1);
-
 }
 
-.infocard {
-    opacity: 0;
-    background: linear-gradient(to right bottom, #804ae5,  #86e6ff);
-    width: 200px;
-    height: 200px;
-    z-index: 3;
-    display:grid;
-    align-content: center;
-    text-align: center;
-    transition: all 0.4s ease-in-out;
-    transform: scale(0.7);
-}
-.infocard a {
-   visibility: hidden;
-   width: 200px;
-    height: 200px;
-}
 
 #contact
 {   width: 100%;
+    height: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
     margin-top: 80px:
 }
 
-.bold {
-    font-weight: 300;
-    color:rgb(127,84,229);
-}
-.boldfooter {
-    font-size: 20px;
-    font-weight: 300;
-    color:rgb(119, 119, 119);
-    padding: 50px 0 20px 0;
-}
-.icon-footer {
-    width: 60px;
-    height: 60px;
-}
 
-.rrss-icons {
-    display: flex;
-    justify-content: center;
-    margin: 30px 0;
+.boldfooter {
+    font-size: 14px;
+    font-weight: 300;
+    color:rgb(0, 0, 0);
+    padding: 50px 0 20px 0;
+    margin: left;
 }
-.rrss-icons ul {
+.icon {
+    text-decoration: none;
+    color: rgb(86, 218, 181);
+    font-weight: 300;
+}
+.icon:hover{
+    font-weight: 600;
+}
+.claim2 li {
+    display: flex;
+    justify-content: left;
+    margin: 10px 0;
+}
+.claim2 ul {
     display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-gap: 50px; 
+    grid-template-columns: repeat(1, auto);
  }
 
 
 .email {
     font-weight: 400;
-    color: rgb(127,84,229);
-    text-align: center;
-    font-size: 18px;
+    color: rgb(86, 218, 181);
+    font-size: 20px;
+}
+.footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    width: 75%;
+}
+.claim2 {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 600;
+    margin: 25px auto;
+    width: 100%;
 }
 
 @media screen and (max-width: 960px)
 {
-#aboutme .summary{
-    max-width: 800px;
-    grid-gap: 40px 40px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, auto);
-    width: 70%;
-}
-
-#aboutme .summary2{
-    max-width: 800px;
-    grid-gap: 40px 40px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, auto);
-    width: 70%;
-}
-#myportfolio .cards{
-    max-width: 800px;
-    grid-gap: 40px 40px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, auto);
-}
-#aboutme .bio {
-    width:100%;
-}
-.boldfooter {
-    font-size: 18px;
-}
+    #contact .footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 auto;
+        width: 75%;
+        }
+        .mainphoto {
+            height: 120px;
+        }
+        .summary {
+            width: 100%;
+            margin: 20px auto;
+        }
+        .sum 
+        {  
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: center;
+            width: 100%;
+            background-color:rgb(208, 255, 242);
+        }
+        .sum1 
+        {  
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: center;
+            width: 100%;
+            background-color: rgb(204, 227, 253);
+        }
+        .principlemenu a {
+            font-size: 22px;
+        }
 }
 
     @media screen and (max-width: 767.98px)
 
     {
     
-    #aboutme .summary{
-        max-width: 600px;
-        grid-gap: 30px 40px;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(1, auto);
-        width: 75%;
-    }
-    .title1{
-        font-size: 26px;
-    }
-
-    #aboutme .summary2{
-        max-width: 600px;
-        grid-gap: 40px 40px;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(2, auto);
-        width: 75%;
-    }
-    #myportfolio .cards{
-        max-width: 600px;
-        grid-gap: 30px 0px;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, auto);
-    }
-    #aboutme .bio {
-        width: 100%;
-    }
-    .mainphoto {
-        height: 170px;
-    }
-    .principlemenu a {
-        font-size: 13px;
-    }
-    .claim {
-        font-size: 18px;
-    }
-    .claim2 {
-        font-size: 18px;
-    }
-
-    .claim3 {
-        font-size: 18px;
-    }
-    .boldfooter {
-        font-size: 16px;
-    }
+        #contact .footer {
+            display: grid;
+            grid-template-columns: repeat(1, 2fr);
+            margin: 0 auto;
+            width: 75%;
+            }
+            .mainphoto {
+                height: 120px;
+            }
+            .summary {
+                width: 100%;
+                margin: 20px auto;
+            }
+            .sum 
+            {  
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                justify-content: center;
+                width: 100%;
+                background-color:rgb(208, 255, 242);
+            }
+            .sum1 
+            {  
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                justify-content: center;
+                width: 100%;
+                background-color: rgb(204, 227, 253);
+            }
+            .principlemenu a {
+                font-size: 20px;
+            }
 
 }
 
     @media screen and (max-width: 650px) {
     
-    #aboutme .summary{
-        max-width: 400px;
-        grid-gap: 25px 0px;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(3, auto);
-        width: 80%;
-    }
-    #aboutme .summary2{
-        max-width: 400px;
-        grid-gap: 35px 0px;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(2, auto);
-        width: 80%;
-    }
-    #myportfolio .cards{
-        max-width: 400px;
-        grid-gap: 25px 0px;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, auto);
-    }
-    #aboutme .bio {
-        width: 100%;
-    }
-    .title1{
-        font-size: 24px;
-    }
-    .mainphoto {
-        height: 150px;
-    }
-    .principlemenu a {
-        font-size: 12px;
-    }
-    .claim {
-        font-size: 18px;
-    }
-    .claim2 {
-        font-size: 18px;
-    }
-    .claim3 {
-        font-size: 18px;
-    }
-    .boldfooter {
-        font-size: 14px;
-    }
+        #contact .footer {
+            display: grid;
+            grid-template-columns: repeat(1, 2fr);
+            margin: 0 auto;
+            width: 75%;
+            }
+            .mainphoto {
+                height: 120px;
+            }
+            .summary {
+                width: 100%;
+                margin: 20px auto;
+            }
+            .sum 
+            {  
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                justify-content: center;
+                width: 100%;
+                background-color:rgb(208, 255, 242);
+            }
+            .sum1 
+            {  
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                justify-content: center;
+                width: 100%;
+                background-color: rgb(204, 227, 253);
+            }
+            .principlemenu a {
+                font-size: 18px;
+            }
+            
 
 }
 @media screen and (max-width: 500px) {
    
-    #aboutme .summary{
-        max-width: 360px;
-        grid-gap: 20px 0px;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(3, auto);
-        width: 85%;
-    }
-    #aboutme .summary2{
-        max-width: 360px;
-        grid-gap: 30px 0px;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(2, auto);
-        width: 85%;
-    }
-    #myportfolio .cards{
-        max-width: 360px;
-        grid-gap: 20px 0px;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(5, auto);
-        
+  
+    #contact .footer {
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    margin: 0 auto;
+    width: 75%;
     }
     .mainphoto {
         height: 120px;
     }
-    #aboutme .bio {
+    .summary {
         width: 100%;
+        margin: 20px auto;
     }
-    #myportfolio .projects  {
-        margin:0;
+    .sum 
+    {  
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        width: 100%;
+        background-color:rgb(208, 255, 242);
     }
-    .title1{
-        margin: 25px 0;
-        font-size: 22px;
-    }
-
-    .claim {
-        font-size: 16px;
-    }
-    .claim2 {
-        font-size: 16px;
-    }
-    .claim3 {
-        font-size: 16px;
+    .sum1 
+    {  
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        width: 100%;
+        background-color: rgb(204, 227, 253);
     }
     .principlemenu a {
-        font-size: 12px;
+        font-size: 16px;
     }
-    h4 {
-       font-size: 13px;
-    }
-    .boldfooter {
-        font-size: 12px;
-    }
+    
 }
