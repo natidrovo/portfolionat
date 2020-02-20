@@ -440,6 +440,9 @@ align-items: center;
             .principlemenu a {
                 font-size: 20px;
             }
+	    .hello1 {
+	   font-size: 32px;
+	}
 
 }
 
@@ -477,6 +480,9 @@ align-items: center;
             .principlemenu a {
                 font-size: 18px;
             }
+	    .hello1 {
+	   font-size: 30px;
+	}
             
 
 }
@@ -515,5 +521,8 @@ align-items: center;
     .principlemenu a {
         font-size: 14px;
     }
+	.hello1 {
+	   font-size: 28px;
+	}
     
 }
