@@ -439,8 +439,8 @@ align-items: center;
             .principlemenu a {
                 font-size: 20px;
             }
-	    .hello1 {
-	   font-size: 32px;
+	    .hello1 p{
+	   font-size: 28px;
 		    line-height: 2.5rem;
 	}
 
@@ -480,14 +480,12 @@ align-items: center;
             .principlemenu a {
                 font-size: 18px;
             }
-	    .hello1 {
-	   font-size: 30px;
-	}
+	    
 	    .principlemenu li {
         margin:  0 8px;
     }
-	.hello1 {
-	   font-size: 24px;
+	.hello1 p{
+	   font-size: 26px;
 	  line-height: 2rem;
 	}
 	.container ¨
@@ -536,7 +534,7 @@ align-items: center;
     .principlemenu li {
         margin:  0 5px;
     }
-	.hello1 {
+	.hello1 p{
 	   font-size: 24px;
 	  line-height: 2rem;
 	}
