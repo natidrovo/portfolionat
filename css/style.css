@@ -486,8 +486,8 @@ align-items: center;
                 font-size: 18px;
             }
             .hello1 p{
-                font-size: 26px;
-               line-height: 2.3rem;
+                font-size: 24px;
+               line-height: 2rem;
              }
              .container 
              {
@@ -537,7 +537,7 @@ align-items: center;
         }
         .hello1 p{
            font-size: 20px;
-          line-height: 2rem;
+          line-height: 1.5rem;
         }
         .container 
         {
