@@ -28,7 +28,6 @@ header {
 }
  .container {
     width: 100vw;
-    height: fit-content;
     padding: 30px 40px;
     box-sizing:border-box;
     position: fixed;
