@@ -177,7 +177,7 @@ h5 {
     justify-items: center;
     margin: 0 0 60px 0;
   }
-}
+
 .bio  {
     margin: 20px auto;
 }
@@ -208,6 +208,7 @@ h5 {
 .summary {
     width: 75%;
     margin: 20px auto;
+    padding-bottom: 60px;
 }
 .sum 
 {  
@@ -253,9 +254,10 @@ align-items: center;
 
   
 .biobutton{
-    text-align-last: left;
     margin: 32px auto;
     width: 75%;
+    text-align: center;
+
 }
 
 .buttonprofile:hover{
@@ -271,18 +273,33 @@ align-items: center;
        cursor: pointer;
      
 }
+
 .linkcs {
     text-decoration: none;
     color: rgb(0, 174, 180);
   
  }
+
  .linkcs:hover {
     text-decoration: none;
     color: rgb(0, 174, 180);
     font-weight: 600;
  }
-
-}
+ p.linkinactive {
+    text-decoration: none;
+    color: rgb(0, 174, 180);
+  
+ }
+ a.linklogo {
+    text-decoration: none;
+    color: rgb(86, 218, 181);
+  
+ }
+ a.linklogo:hover {
+    text-decoration: none;
+    color: rgb(86, 218, 181);
+    font-weight: 600;
+ }
 #myportfolio 
 {
     width: 100%;
