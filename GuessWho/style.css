@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap');
+
+body {
+  margin: 0 auto;
+  padding: 1em;
+  max-width: 60em;
+  font-family: 'Balsamiq Sans', sans-serif;
+  line-height: 1.5;
+  color: #fff;
+  background-color: #790000;
+  
+}
+
+#bg {
+display: flex;
+justify-content: space-evenly;
+}
+#cards {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    grid-gap: 16px;
+}
+.card-selection{
+    display: flex;
+    
+}
+.card-selection-container{
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    grid-gap: 16px;
+}
+.card-selector {
+    width: 80px;
+    height: 120px;
+    border:  4px solid rgb(255, 255, 255);
+    border-radius: 4px;
+  }
+.card {
+    width: 80px;
+    height: 120px;
+    border:  4px solid rgb(255, 255, 255);
+    border-radius: 4px;
+}
+#card-char {
+    width: 80px;
+    height: 120px;
+  }
+#cards-adversary {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    grid-gap: 4px;
+}
+#adversary-cards {
+ background-color: rgb(0, 0, 160);
+ padding: 4px;
+}
+
+.adversary-card {
+        width: 20px;
+        height: 30px;
+        border:  2px solid rgb(255, 255, 255);
+}
+.card-selector:hover {
+    transform: translateY(-5px);
+    transition: .2s all ease-in-out;
+}
+.card-discarded {
+    border:  4px solid rgb(66, 0, 0);
+    color: rgb(66, 0, 0);
+    border-radius: 4px;
+    opacity: 0.2;
+}
+#score {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    align-items: center;
+}
+
+#selected-char, #your-panel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+
+#selected-char {
+    margin-bottom: 20px;
+}
+
+#selected-name-char {
+    text-transform: uppercase; 
+}
+
+.name-char {
+    text-transform: uppercase; 
+    color: white;
+    font-size: 12px;
+    text-align: center;
+}
+
+.divider {
+    height: 2px;
+    background-color: #fff;
+    width: inherit;
+}
+.btn {
+    width: 160px;
+    height: 40px;
+    font-family: 'Balsamiq Sans', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 0;
+    color: #fff;
+    letter-spacing: 1px;
+    margin: 24px 0;
+}
+.btn:hover {
+    transform: translateY(-5px);
+    transition: .2s all ease-in-out;
+}
+#solve {
+    background-color: #13DE00;
+}
+
+
+#ask-question {
+    background-color: #00CECB;
+}
+
+#try-again {
+    background-color: #1f41ff;
+}
+
+#start-game, #discard-button {
+    background-color: #790000;
+}
+
+.guess-box {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 46, 46, 0.973);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.guess-box-container-id {
+    width: 480px;
+    height: 240px;
+    background-color: white;
+    color: black;
+    border:  4px solid rgb(85, 85, 85);
+    text-align: center;
+}
+.hidden {
+    display:none !important;
+}
+
+.vertical-box-container {
+    width: 480px;
+    height: 240px;
+    background-color: white;
+    color: black;
+    border:  4px solid rgb(85, 85, 85);
+    display: grid;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.guess-box-container {
+    width: 480px;
+    height: 240px;
+    background-color: white;
+    color: black;
+    border:  4px solid rgb(85, 85, 85);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.question-boxes-content {
+    display: flex;
+}
+.question-boxes {
+    width:80px;
+    height: 80px;
+    background-color: white;
+    border:  4px solid rgb(85, 85, 85);
+}
+.black {
+    color: black;
+}
+h1, h2,h3 {
+    text-align: center;
+}
+h2 {
+    color: white;
+    font-size: 20px;
+}
+h3 {
+    font-size: 16px;
+}
+ol {
+    width: 50%;
+}
+
+#darkbrown-hair-selector {
+    background-color: rgb(44, 18, 0);
+}
+
+#brown-hair-selector {
+    background-color: rgb(100, 42, 0);
+}
+#red-hair-selector {
+    background-color: rgb(158, 0, 0);
+}
+
+#blonde-hair-selector {
+    background-color: rgb(255, 180, 40);
+}
+#white-skin-selector {
+    background-color: rgb(255, 232, 190);
+}
+#brown-skin-selector {
+    background-color: rgb(214, 145, 66);
+}
+#black-skin-selector {
+    background-color: rgb(71, 41, 1);
+}
+
+#man-gender-selector {
+    background: url(img/man.png) no-repeat;background-position: center;background-size: contain;
+}
+
+#woman-gender-selector {
+    background: url(img/woman.png) no-repeat;background-position: center;background-size: contain;
+}
