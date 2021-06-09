@@ -245,7 +245,9 @@ ol {
     background: url(img/woman.png) no-repeat;background-position: center;background-size: contain;
 }
 @media (max-width: 480px) {
-    
+    body {
+      padding:8px ;
+  }
     #cards, #cards-adversary, .card-selection-container{
         grid-template-columns: repeat(5, 1fr) !important;
     }
@@ -259,13 +261,13 @@ ol {
     }
     .card-selector {
         width: 48px;
-        height: 64px;
+        height: 60px;
         border: 2px solid rgb(255, 255, 255);
         border-radius: 4px;
     }
     .card {
         width: 48px;
-        height: 64px;
+        height: 60px;
         border: 2px solid rgb(255, 255, 255);
     }
     #cards {
@@ -289,7 +291,7 @@ ol {
     
     .adversary-card {
             width: 8px;
-            height: 14px;
+            height: 13px;
             border:  0.5px solid rgb(255, 255, 255);
     }
     h3 {
@@ -328,6 +330,12 @@ ol {
         width: 320px;
         height: 140px;
     }
+  .btn {
+    letter-spacing: 0;
+    font-size: 12px;
+  }
+  .name-char {
+    font-size:10px;
   }
 
   @media (max-width: 800px) {
