@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css" />
+  <title>Guess Who Game</title>
+</head>
+
+<body>
+  <div id="bg">
+    <div id="welcome" class='guess-box'>
+      <h2>Welcome to Guess Who game!</h2>
+      <h3>Instructions</h3>
+      <ol>
+        <li>Choose your character.</li>
+        <li>Your adversary will choose its character too.</li>
+        <li>Try to guess about the character of your adversary by asking questions too.</li>
+        <li>Your adversary will ask to you some questions about your character.</li>
+        <li>The first who can guess the right character before will be the winner.</li>
+      </ol>
+      <button id="start-game" class="btn" onclick="guesswho.startGame()">Let's start</button>
+    </div>
+    <div id="cards-selection" class='guess-box hidden'>
+      <h2>Choose your character by clicking over it!</h2>
+      <div class="card-selection-container">
+      </div>
+    </div>
+    <div>
+      <h2 class="main-title">Guess Who game</h2>
+    </div>
+    <div class="main-content">
+      <div id="cards"></div>
+      <div id="score">
+        <h3 id="total-value">Adversary cards:<span id="matched-char">0</span>/<span id="total-char">0</span></h3>
+        <div id="adversary-cards">
+          <div id="cards-adversary"></div>
+        </div>
+        <div id="computer-questions" class="question-box">
+          <h3>Last question from Player 2 was: <span id="question-from-computer"></span></h3>
+        </div>
+        <div id="selected-char">
+          <h3>Your character is: <span id="selected-name-char"></span></h3>
+          <div id="card-char"></div>
+        </div>
+        <div id="your-panel">
+          <button id="ask-question" class="btn" onclick="guesswho.askAQuestion()">Ask a question</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="main-guess-box" class='guess-box hidden'>
+    <h3>Ask a new question</h3>
+    <div class='guess-box-container'>
+      <div class="question-boxes" id="gender-selector" onclick="guesswho.askMainQuestion('gender')">
+        <img src="./img/sex.png" style="width: 80px; height: 80px;">
+        <h3>Gender</h3>
+      </div>
+      <div class="question-boxes" id="hair-selector" onclick="guesswho.askMainQuestion('hair')">
+        <img src="./img/hair.png" style="width: 80px; height: 80px;">
+        <h3>Hair</h3>
+      </div>
+      <div class="question-boxes" id="skin-selector" onclick="guesswho.askMainQuestion('skin')">
+        <img src="./img/skin.png" style="width: 80px; height: 80px;">
+        <h3>Skin</h3>
+      </div>
+      <div class="question-boxes" id="beard-selector" onclick="guesswho.askMainQuestion('beard')">
+        <img src="./img/beard.png" style="width: 80px; height: 80px;">
+        <h3>Beard</h3>
+      </div>
+      <div class="question-boxes" id="glasses-selector" onclick="guesswho.askMainQuestion('glasses')">
+        <img src="./img/glasses.png" style="width: 80px; height: 80px;">
+        <h3>Glasses</h3>
+      </div>
+    </div>
+  </div>
+  <div class="guess-box hidden" id='guess-box-gender'>
+    <h3>You want to know about the gender...</h3>
+    <div class='guess-box-container'>
+      <div class="question-boxes" id="man-gender-selector" onclick="guesswho.askValueQuestion('gender','man')">Man</div>
+      <div class="question-boxes" id="woman-gender-selector" onclick="guesswho.askValueQuestion('gender','woman')">Woman
+      </div>
+    </div>
+  </div>
+  <div class="guess-box hidden" id='guess-box-hair'>
+    <h3>You want to know about the hair...</h3>
+    <div class='guess-box-container'>
+      <div class="question-boxes" id="darkbrown-hair-selector" onclick="guesswho.askValueQuestion('hair','darkbrown')">
+        Darkbrown</div>
+      <div class="question-boxes" id="brown-hair-selector" onclick="guesswho.askValueQuestion('hair','brown')">Brown
+      </div>
+      <div class="question-boxes" id="red-hair-selector" onclick="guesswho.askValueQuestion('hair','red')">Red</div>
+      <div class="question-boxes" id="blonde-hair-selector" onclick="guesswho.askValueQuestion('hair','blonde')">Blonde
+      </div>
+      <div class="question-boxes" id="bald-hair-selector" onclick="guesswho.askValueQuestion('hair','bald')">Bald</div>
+    </div>
+  </div>
+  <div class="guess-box hidden" id='guess-box-skin'>
+    <h3>You want to know about the skin...</h3>
+    <div class='guess-box-container'>
+      <div class="question-boxes" id="white-skin-selector" onclick="guesswho.askValueQuestion('skin','white')">White
+      </div>
+      <div class="question-boxes" id="brown-skin-selector" onclick="guesswho.askValueQuestion('skin','brown')">Brown
+      </div>
+      <div class="question-boxes" id="black-skin-selector" onclick="guesswho.askValueQuestion('skin','black')">Black
+      </div>
+    </div>
+  </div>
+  <div id="final-guess-box" class='guess-box hidden'>
+    <div class='guess-box-container-id'>
+      <h3 class="black">Your question: <span id="posible-value"></span> <span id="char-property"></span>?</h3>
+      <h3 class="black">Answer: <span id="boolean-answer"></span></h3>
+      <button id="discard-button" class="btn" onclick="guesswho.discardChar()">Discard characters</button>
+    </div>
+  </div>
+  <div id="final-guess-box-gender" class='guess-box hidden'>
+    <div class='guess-box-container-id'>
+      <h3 class="black">Your question: It is a<span id="posible-value"></span> <span id="char-property"></span>?</h3>
+      <h3 class="black">Answer: <span id="boolean-answer"></span></h3>
+      <button id="discard-button" class="btn" onclick="guesswho.discardChar()">Discard characters</button>
+    </div>
+  </div>
+
+  <div id="you-win" class='guess-box hidden'>
+    <h2>You win!!</h2>
+    <h2>The character selected by Player 2 is:</h2>
+    <div id="computer-selected-char"></div>
+    <button id="solve" class="btn solve" onclick="guesswho.restart()">Restart</button>
+  </div>
+  <div id="you-lose" class='guess-box hidden'>
+    <h2>You lose!!</h2>
+    <button id="try-again" class="btn solve" onclick="guesswho.tryAgain()">Try again!</button>
+  </div>
+  </div>
+  <script type="text/javascript" src="./js/index.js"></script>
+  <script type="text/javascript" src="./js/dom.js"></script>
+</body>
+
+</html>
